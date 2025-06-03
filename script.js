@@ -226,3 +226,18 @@ function setupEventListeners() {
         });
     }
 }
+// Mobile Menu Toggle - Fixed version
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const dropdownMenu = document.getElementById('sidebar'); // Use your menu id here
+  const overlay = document.getElementById('overlay');
+
+  function toggleDropdown() {
+    dropdownMenu.classList.toggle('active');
+    overlay.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
+  }
+
+  hamburger.addEventListener('click', toggleDropdown);
+  overlay.addEventListener('click', toggleDropdown);
+});
