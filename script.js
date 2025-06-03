@@ -241,3 +241,4 @@ document.addEventListener('DOMContentLoaded', () => {
   hamburger.addEventListener('click', toggleDropdown);
   overlay.addEventListener('click', toggleDropdown);
 });
+
